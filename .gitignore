@@ -1,2 +1,5 @@
+//This is where the generated site will be placed once Jekyll is done transforming it.
 _site
+
+//This is where Sass compiled files will be placed
 .sass-cache
