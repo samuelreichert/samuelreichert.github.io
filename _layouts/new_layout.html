@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  {% include head.html %}
+  {% include google_analytics.html %}
+
+  <body>
+    {% include new_header.html %}
+
+    <div class="my-container">
+      <div class="container">
+        <div class="row">
+          {{ content }}
+        </div>
+      </div>  
+    </div>
+
+    {% include new_footer.html %}
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

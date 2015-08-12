@@ -42,14 +42,20 @@ $on-laptop:        800px;
     }
 }
 
+// Created a empty box-shadow
+@mixin box-shadow($none) {
+
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+  "bootstrap.css",
   "base",
   "layout",
   "syntax-highlighting",
-  "bourbon/bourbon",
-  "neat/neat",
-  "base/base"
+  "new_layout",
+  "variables",
+  "bootswatch"
 ;
