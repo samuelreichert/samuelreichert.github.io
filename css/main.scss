@@ -51,11 +51,13 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "bootstrap.css",
+  "bootstrap.css",  
   "base",
-  "layout",
   "syntax-highlighting",
   "new_layout",
   "variables",
   "bootswatch"
 ;
+
+
+// "layout",

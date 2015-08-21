@@ -2,7 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <h4>{{ site.title }} - <small>{{ site.description }}</small></h4>
+        <h5>
+          {{ site.title }}, {{ site.description }} - 
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+            Subscribe
+          </a>
+        </h5>
       </div>
     </div>
   </div>

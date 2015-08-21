@@ -1,14 +1,22 @@
 ---
 layout: new_layout
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        <article class="post-content">
+        {% if content.length > 0 %}
+          {{ content }}
+        {% else %}
+          <h4 class="text-danger">
+            <i class="fa fa-lg fa-exclamation-triangle"></i>
+            {{ site.nocontentalert }}
+          </h4>
+        {% endif %}
+        </article>
+      </div>
+    </div>
+  </div>
 </div>

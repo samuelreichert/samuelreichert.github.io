@@ -5,12 +5,15 @@ permalink: /about/
 weight: 4
 ---
 
+## Sobre o Blog
 * Minha ideia principal quando comecei a planejar o blog é de principalmente mostrar a minha opinião sobre os mais variados assuntos, fazer reviews de aplicativos, gadgets, ferramentas. 
 * Quero também focar em tutoriais sobre assuntos que estou aprendendo, na maioria das vezes as postagens serão direcionadas à programação, mas não significa que não postarei sobre qualquer outro assunto de meu interesse.
 * Vou procurar mostrar da forma mais clara possível cada conteúdo, dando dicas, mostrando minhas experiências e citando as fontes de onde retiro cada material.
 * Sempre vou estar aberto a sugestões e críticas!
 
-## Contato
+## Sobre Mim
+
+### Contato
 
 #### Redes Sociais
 
