@@ -19,6 +19,8 @@ layout: new_layout
               <p class="text-muted">
                 <i class="fa fa-calendar"></i> {{ post.date | date: "%-d/%m/%Y" }}
               </p>
+              
+              <p><em>{{post.excerpt}}</em></p>
 
               <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary btn-lg pull-right col-md-4">
                 <i class="fa fa-plus fa-lg"></i> Leia Mais
