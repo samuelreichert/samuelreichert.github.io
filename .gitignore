@@ -3,3 +3,4 @@ _site
 
 //This is where Sass compiled files will be placed
 .sass-cache
+.jekyll-metadata
