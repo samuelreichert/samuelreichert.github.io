@@ -286,7 +286,7 @@ html, body {
 
 .my-container {
   min-height: calc(100% - 89px);
-  margin-bottom: -48px; }
+  margin-bottom: -64px; }
   .my-container:after {
     content: "";
     display: block; }
@@ -300,18 +300,19 @@ html, body {
   margin-bottom: 30px; }
 
 .footer, .my-container:after {
-  height: 48px; }
+  height: 64px; }
 
 .footer {
   width: 100%;
-  padding-top: 16px;
-  min-height: 48px;
+  padding-top: 2.4rem;
+  min-height: 64px;
   text-align: center;
   background-color: #eee;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  .footer h4 {
+  box-sizing: border-box;
+  position: relative; }
+  .footer h5 {
     color: #353432;
     margin-bottom: 0; }
   .footer small {

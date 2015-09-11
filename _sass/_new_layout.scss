@@ -6,12 +6,6 @@ html, body {
   height: 100%;
 }
 
-// .navbar .navbar-inverse {
-//   -webkit-box-sizing: border-box;
-//   -moz-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
-
 .navbar-toggle {
   float: left;
   margin-left: 1em;
@@ -19,7 +13,7 @@ html, body {
 
 .my-container {
   min-height: calc(100% - 89px);
-  margin-bottom: -48px;
+  margin-bottom: -64px;
 
   &:after {
     content: "";
@@ -36,24 +30,27 @@ html, body {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
 }
+
 .footer, .my-container:after {
-  height: 48px;
+  height: 64px;
 }
 
 .footer {
   width: 100%;
-  padding-top: 16px;
-  min-height: 48px;
+  padding-top: 2.4rem;
+  min-height: 64px;
   text-align: center;
   background-color: #eee;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
 
-  h4 {
+  h5 {
     color: #353432;
     margin-bottom: 0;
   }
+  
   small {
     color: #4E4D4A;
   }
