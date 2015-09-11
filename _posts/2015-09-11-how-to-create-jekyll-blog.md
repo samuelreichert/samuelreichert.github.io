@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Como eu criei meu blog usando Jekyll
-date:   2015-09-09 01:18:20
+date:   2015-09-11 09:06:32
 author: Samuel Reichert
 categories: ["programming"]
 image: jekyll-logo.png
