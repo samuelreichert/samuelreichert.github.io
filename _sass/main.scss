@@ -28,6 +28,10 @@ body {
   flex-direction: column;
   padding: 32px 8px;
 
+  &__credits {
+    font-size: 12px;
+  }
+
   &__passion {
     font-weight: 300;
     margin: 16px 0;
