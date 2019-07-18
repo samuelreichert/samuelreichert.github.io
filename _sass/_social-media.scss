@@ -1,0 +1,26 @@
+.social-media {
+  display: flex;
+  list-style-type: none;
+  margin: 16px 0;
+
+  &__icon {
+    width: 32px;
+  }
+
+  &__link {
+    color: $blue-link;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 16px;
+
+    &:hover {
+      filter: brightness(128%);
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
