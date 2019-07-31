@@ -13,9 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Samuel Reichert
+title: Samuel Reichert | Developer
 name: Samuel Reichert
 email: samuelreichertt@gmail.com
+avatar_url: https://avatars3.githubusercontent.com/u/7821031?v=4
+resume_url: https://docs.google.com/document/d/1hEMCGXnCpBwDHi2ZeiyWFHiCd9eKm7nkOpoBeCLR94E/export?format=pdf
 description: >- # this means to ignore newlines until "baseurl:"
   I have 5 years of experience focused on web development, working mostly with
   React in front end, and Ruby (Ruby on Rails) and Node.js in back end,

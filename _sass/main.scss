@@ -26,7 +26,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 32px 8px;
+  padding: 32px 16px;
 
   &__credits {
     font-size: 12px;
@@ -35,5 +35,9 @@ body {
   &__passion {
     font-weight: 300;
     margin: 16px 0;
+  }
+
+  a {
+    color: $blue-link;
   }
 }

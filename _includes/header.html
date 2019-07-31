@@ -1,0 +1,17 @@
+{% assign meta_description = site.description | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ meta_description }}" />
+    <meta property="og:title" content="{{ site.name }}" />
+    <meta property="og:image" content="{{ site.avatar_url }}" />
+    <meta property="og:description" content="{{ meta_description }}" />
+    <title>{{ site.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>

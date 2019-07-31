@@ -1,0 +1,34 @@
+<div class="profile">
+  <div class="profile__gradient-circle">
+    <img
+      src="{{ site.avatar_url }}"
+      alt="{{ site.name }} profile image"
+      class="profile__avatar"
+    />
+  </div>
+
+  <h1 class="profile__name">{{ site.name }}</h1>
+
+  {% include social-media.html %}
+
+  <p class="profile__description">{{ site.description }}</p>
+
+  <span class="email">
+    <img
+      src="/assets/images/mail.svg"
+      class="email__icon"
+      alt="email me icon"
+    />
+    <a href="mailto:{{ site.email }}" class="email__link">{{ site.email }}</a>
+  </span>
+
+  <a
+    href="{{ site.resume_url }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="resume"
+  >
+    <!-- <img src="/assets/images/download.svg" class="resume__icon" alt="download resumé icon" /> -->
+    <span>Download my CV</span>
+  </a>
+</div>
