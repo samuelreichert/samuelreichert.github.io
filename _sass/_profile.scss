@@ -56,9 +56,8 @@
   margin: 16px 0;
 
   &__icon {
-    margin-right: 4px;
-    width: 24px;
-    height: 24px;
+    color: $cloudy-sky;
+    margin-right: 8px;
   }
 
   &__link {
@@ -88,8 +87,6 @@
   }
 
   &__icon {
-    color: $white;
-    width: 16px;
-    margin-right: 4px;
+    margin-right: 8px;
   }
 }

@@ -1,0 +1,81 @@
+.repositories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 481px) {
+    justify-content: flex-start;
+  }
+
+  &.loading {
+    justify-content: center;
+  }
+}
+
+.repo-card {
+  display: flex;
+  align-items: center;
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px $black-at-16;
+  color: $cloudy-sky;
+  font-size: 1.6rem;
+  margin: 0 0 16px;
+  padding: 16px;
+  width: 100%;
+
+  @media (min-width: 481px) {
+    height: 94px;
+    margin-right: 32px;
+    min-width: 300px;
+    width: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    margin-left: 16px;
+  }
+
+  &__details {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-weight: 300;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    margin-right: 16px;
+
+    &--dev {
+      font-size: 1.4rem;
+      margin-right: 4px;
+    }
+
+    &--mini {
+      font-size: 1.6rem;
+      margin-right: 4px;
+      margin-left: 24px;
+    }
+  }
+
+  &__icon-wrapper {
+    border-right: 1.1px solid $cloudy-sky;
+  }
+
+  &__title {
+    color: $cloudy-sky;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-decoration: none;
+    word-break: break-word;
+  }
+}

@@ -11,10 +11,21 @@
     <meta property="og:image" content="https://avatars3.githubusercontent.com/u/7821031?v=4" />
     <meta property="og:description" content="I have 5 years of experience focused on web development, working mostly with React in front end, and Ruby (Ruby on Rails) and Node.js in back end, always seeking to improve my knowledge to deliver better solutions." />
     <title>Samuel Reichert | Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&display=swap" rel="stylesheet">
+    <!-- Exo 2 Font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Dev Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
   <body>
+
+  <div class="full-page-loader">
+  <div class="lds-ripple white big"><div></div><div></div></div>
+</div>
 
 
   <div class="app">
@@ -87,11 +98,7 @@
   <p class="profile__description">I have 5 years of experience focused on web development, working mostly with React in front end, and Ruby (Ruby on Rails) and Node.js in back end, always seeking to improve my knowledge to deliver better solutions.</p>
 
   <span class="email">
-    <img
-      src="/assets/images/mail.svg"
-      class="email__icon"
-      alt="email me icon"
-    />
+    <i class="material-icons email__icon">mail_outline</i>
     <a href="mailto:samuelreichertt@gmail.com" class="email__link">samuelreichertt@gmail.com</a>
   </span>
 
@@ -101,13 +108,22 @@
     rel="noopener noreferrer"
     class="resume"
   >
-    <!-- <img src="/assets/images/download.svg" class="resume__icon" alt="download resumé icon" /> -->
+    <i class="material-icons resume__icon">cloud_download</i>
     <span>Download my CV</span>
   </a>
 </div>
 
 
     <div class="content">
+      <h2 class="content__title">
+  <i class="devicon-github-plain content__icon"></i>
+  <span>Projects</span>
+</h2>
+
+<ul class="repositories loading" data-public-repositories>
+  <div class="lds-ripple"><div></div><div></div></div>
+</ul>
+
     </div>
   </div>
 
@@ -115,6 +131,8 @@
       <p class="footer__passion">❤️&nbsp; I am passionate about traveling. &nbsp;🛫</p>
       <small class="footer__credits">Icons from <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small>
     </footer>
+
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
 

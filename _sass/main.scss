@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: $chocolate;
+  background-color: $cards-base;
   color: $grafitti;
   font-family: 'Exo 2', sans-serif;
   margin: 0;
@@ -22,6 +22,7 @@ body {
 }
 
 .footer {
+  background-color: $grafitti;
   color: $white;
   display: flex;
   align-items: center;
@@ -30,15 +31,17 @@ body {
 
   &__credits {
     font-size: 1.2rem;
+    font-weight: 300;
+
   }
 
   &__passion {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     margin: 16px 0;
   }
 
   a {
-    color: $grafitti;
+    color: $white;
   }
 }
