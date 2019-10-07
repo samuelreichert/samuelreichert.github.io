@@ -1,7 +1,4 @@
-const renderRepository = (repo) => {
-  iconLanguage = repo.language.toLowerCase()
-  if (iconLanguage === 'html') iconLanguage = 'html5'
-
+const renderRepository = ({ html_url, language, name, updated_at }) => {
   const card = document.createElement('li')
   card.className = 'repo-card'
   card.innerHTML = `
@@ -9,20 +6,35 @@ const renderRepository = (repo) => {
       <i class="devicon-git-plain repo-card__icon"></i>
     </div>
     <div class="repo-card__content">
-      <a class="repo-card__title" href="${repo.html_url}" target="_blank">${repo.name}</a>
+      <a class="repo-card__title" href="${html_url}" target="_blank">${name}</a>
 
       <div class="repo-card__details">
-        <i class="devicon-${iconLanguage}-plain colored repo-card__icon--dev"></i>
-        <span>${repo.language}</span>
+        ${renderLanguage(language)}
         <i class="material-icons email__icon repo-card__icon--mini">update</i>
         <span>
-          ${new Date(repo.updated_at).toLocaleDateString('PT-br')}
+          ${new Date(updated_at).toLocaleDateString('PT-br')}
         </span>
       </div>
     </div>
   `
 
   return card
+}
+
+const renderLanguage = (language) => {
+  let iconLanguage
+
+  if (language) {
+    iconLanguage = language.toLowerCase()
+    if (iconLanguage === 'html') iconLanguage = 'html5'
+
+    return `
+      <i class="devicon-${iconLanguage}-plain colored repo-card__icon--dev"></i>
+      <span>${language}</span>
+    `
+  }
+
+  return ''
 }
 
 const displayRepositories = () => {
