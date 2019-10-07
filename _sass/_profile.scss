@@ -7,6 +7,10 @@
   padding: 48px 16px;
   z-index: 1;
 
+  @media (min-width: 768px) {
+    min-width: 360px;
+  }
+
   &__description,
   &__gradient-circle,
   &__name {

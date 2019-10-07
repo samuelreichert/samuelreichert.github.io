@@ -19,6 +19,11 @@ body {
 .app {
   display: flex;
   flex-direction: column;
+  min-height: calc(100% - 140px);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .footer {
@@ -27,7 +32,10 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 140px;
   padding: 32px 16px;
+  position: relative;
+  z-index: 1;
 
   &__credits {
     font-size: 1.2rem;
