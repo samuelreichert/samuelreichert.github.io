@@ -19,9 +19,11 @@ email: samuelreichertt@gmail.com
 avatar_url: https://avatars3.githubusercontent.com/u/7821031?v=4
 resume_url: https://docs.google.com/document/d/1hEMCGXnCpBwDHi2ZeiyWFHiCd9eKm7nkOpoBeCLR94E/export?format=pdf
 description: >- # this means to ignore newlines until "baseurl:"
-  I have 5 years of experience focused on web development, working mostly with
-  React in front end, and Ruby (Ruby on Rails) and Node.js in back end,
-  always seeking to improve my knowledge to deliver better solutions.
+  I'm a frontend developer, I have 6 years of experience, I have worked with
+  Javascript since 2014, and also with Ruby since 2015 (Ruby on Rails)
+  and Node.js since 2018 (Express.js) in the backend. I am always working
+  to improve my knowledge to deliver better solutions. I am currently
+  studying Typescript! :D
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: samuelreichert
