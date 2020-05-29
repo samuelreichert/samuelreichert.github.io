@@ -34,6 +34,10 @@
 
   &__content {
     margin-left: 16px;
+
+    @media (max-width: 340px) {
+      margin-left: 8px;
+    }
   }
 
   &__details {
@@ -41,6 +45,10 @@
     align-items: flex-end;
     flex-wrap: wrap;
     font-weight: 300;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
   &__icon {
@@ -56,10 +64,11 @@
       font-size: 1.6rem;
       margin-right: 4px;
       margin-left: 24px;
+    }
 
-      &:first-child {
-        margin-left: 0;
-      }
+    @media (max-width: 340px) {
+      font-size: 2.6rem;
+      margin-right: 8px;
     }
   }
 
@@ -75,5 +84,9 @@
     margin-bottom: 4px;
     text-decoration: none;
     word-break: break-word;
+
+    @media (max-width: 340px) {
+      font-size: 1.5rem;
+    }
   }
 }

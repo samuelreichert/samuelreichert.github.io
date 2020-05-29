@@ -9,11 +9,15 @@ const renderRepository = ({ html_url, language, name, updated_at }) => {
       <a class="repo-card__title" href="${html_url}" target="_blank">${name}</a>
 
       <div class="repo-card__details">
-        ${renderLanguage(language)}
-        <i class="material-icons email__icon repo-card__icon--mini">update</i>
-        <span>
-          ${new Date(updated_at).toLocaleDateString('PT-br')}
-        </span>
+        <div class="repo-card__details">
+          ${renderLanguage(language)}
+        </div>
+        <div class="repo-card__details">
+          <i class="material-icons email__icon repo-card__icon--mini">update</i>
+          <span>
+            ${new Date(updated_at).toLocaleDateString('PT-br')}
+          </span>
+        </div>
       </div>
     </div>
   `

@@ -29,8 +29,8 @@
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.68;
-    max-width: 480px;
-    text-align: justify;
+    max-width: 540px;
+    text-align: center;
   }
 
   &__gradient-circle {
@@ -49,7 +49,11 @@
     font-weight: 700;
     text-shadow: 0px 2px 2px $blue-grey-16;
 
-    @media (max-width: 480px) {
+    @media (max-width: 340px) {
+      font-size: 2.6rem;
+    }
+
+    @media screen and (min-width: 341px) and (max-width: 480px) {
       font-size: 3.6rem;
     }
   }
@@ -70,10 +74,15 @@
     font-weight: 300;
     line-height: 1;
   }
+
+  @media (max-width: 340px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .resume {
-  background-image: linear-gradient(180deg, $happy-green 0%, $blue-link 100%);
+  background-color: $blue-link;
   border-radius: 2em;
   color: $white;
   display: flex;
@@ -92,5 +101,9 @@
 
   &__icon {
     margin-right: 8px;
+  }
+
+  @media (max-width: 340px) {
+    padding: 16px 24px;
   }
 }

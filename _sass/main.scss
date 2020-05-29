@@ -20,10 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: calc(100% - 140px);
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
 }
 
 .footer {
